@@ -64,7 +64,7 @@ y_pred = lr.predict(X_test)
 # Centered headers
 st.markdown("<h1 style='text-align: center;'>Who are LinkedIn Users?</h1>", unsafe_allow_html=True)
 st.markdown(
-    "<div style='text-align: center;'><img src='Linkedin.png' alt='LinkedIn Image'></div>",
+    "<div style='text-align: center;'><img src='LinkedIn.png' alt='LinkedIn Image'></div>",
     unsafe_allow_html=True
 )
 
