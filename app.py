@@ -96,11 +96,10 @@ predict_data = pd.DataFrame({
     "income": [income],  
     "education": [education],  
     "parent": [parent1],  
-    "married": [married1],  
+    "married": [married1], 
     "female": [gender1],  
     "age": [age] 
 })
-
 
 # Use model to make predictions
 predict_data["sm_li"] = lr.predict(predict_data)
