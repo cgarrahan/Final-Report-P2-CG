@@ -61,9 +61,9 @@ y_pred = lr.predict(X_test)
 
 #will use predict data later based on the input
 
-st.markdown("# Who are LinkedIn Users?")
-st.markdown("### To determine who is likely a LinkedIn user, please enter data below")
-st.markdown("#### Income")
+st.markdown("<center># Who are LinkedIn Users?</center>", unsafe_allow_html=True)
+st.markdown("<center>### _To determine who is likely a LinkedIn user, please demographic information below_ </center>", unsafe_allow_html=True)
+st.markdown("#### Income ( _see Income level breakdown below_ )")
 st.image("Income.png")
 income = st.slider('Select a value', min_value=1, max_value=9, value=1)
 
@@ -110,4 +110,4 @@ if predict_data["sm_li"].iloc[0] == 1:
 else:
     text = "Not a LinkedIn User"
 
-st.write(text)
+st.markdown(f"# Probability is: {text}")
