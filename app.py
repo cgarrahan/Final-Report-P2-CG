@@ -62,8 +62,8 @@ y_pred = lr.predict(X_test)
 #will use predict data later based on the input
 
 # Centered headers
-st.markdown("<center># Who are LinkedIn Users?</center>", unsafe_allow_html=True)
-st.markdown("<center>### To determine who is likely a LinkedIn user, please enter demographic information below</center>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Who are LinkedIn Users?</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;'>To determine who is likely a LinkedIn user, please enter demographic information below</h3>", unsafe_allow_html=True)
 
 # Subheading
 st.markdown("#### Income")
