@@ -61,10 +61,16 @@ y_pred = lr.predict(X_test)
 
 #will use predict data later based on the input
 
-st.markdown("# <center>Who are LinkedIn Users?</center>", unsafe_allow_html=True)
-st.markdown("### _ <center> To determine who is likely a LinkedIn user, please demographic information below_</center> _", unsafe_allow_html=True)
+# Centered headers
+st.markdown("<center># Who are LinkedIn Users?</center>", unsafe_allow_html=True)
+st.markdown("<center>### To determine who is likely a LinkedIn user, please enter demographic information below</center>", unsafe_allow_html=True)
+
+# Subheading
 st.markdown("#### Income")
-st.write(_see Income level breakdown below_)
+
+# Text with emphasis
+st.write("*See Income level breakdown below*")
+
 st.image("Income.png")
 income = st.slider('Select a value', min_value=1, max_value=9, value=1)
 
